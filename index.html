@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+        <title>Jeremy's Practice Site</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+		<meta content="" name="description">
+		<meta content="" name="author">
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/bootstrap-responsive.css">
+        <link rel="stylesheet" href="css/sortable.css">
+        <style>
+			body {padding-top: 60px; }
+		</style>
+        <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+		<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+		<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+		<link rel="stylesheet" href="/resources/demos/style.css" />
+         <style>
+			#sortable { list-style-type: none; margin: 0; padding: 0; width: 60%; }
+			#sortable li { margin: 0 3px 3px 3px; padding: 0.4em; padding-left: 1.5em; font-size: 1.4em; height: 18px; }
+			#sortable li span { position: absolute; margin-left: -1.3em; }
+		</style>
+		<script>
+			$(function() {
+			$( "#sortable" ).sortable();
+			$( "#sortable" ).disableSelection();
+			});
+		</script> 
+		<style>
+			#sortable { list-style-type: none; margin: 0; padding: 0; width: 60%; }
+			#sortable li { margin: 0 3px 3px 3px; padding: 0.4em; padding-left: 1.5em; font-size: 1.4em; height: 18px; }
+			#sortable li span { position: absolute; margin-left: -1.3em; }
+		</style>
+		<script>
+			$(function() {
+			$( "#sortable" ).sortable();
+			$( "#sortable" ).disableSelection();
+			});
+		</script> 
+    </head>
+    <body>
+    	<div class="navbar navbar-inverse navbar-fixed-top">
+        	<div class="navbar-inner">
+            	<div class="container">
+                	<button class="btn btn-navbar" data-target=".nav-collapse" data-toggle="collapse" type="button">
+					<a class="brand" href="#">MySite</a>
+                    	<span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+					</button>
+                    <div class="nav-collapse collapse">
+                    	<ul class="nav">
+                        	<li class="divider-vertical"></li>
+                        	<li class="active">
+                            	<a href="index.html">Favorite Movies</a>
+                            </li>
+                            <li class="divider-vertical"></li>
+                            <li>
+                            	<a href="gallery.html">Photo Gallery</a>
+                            </li>
+                            <li class="divider-vertical"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+        	<div class="row">
+            	<div class="span4, offset4">
+                	<h1>My Favorite Movies</h1>
+                </div>
+            </div>
+            &nbsp;
+            <div class="row">
+                <div class="span4, offset4">
+					<p>This is a list of my top ten favorite movies</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+        	<div class="span3"></div>
+        	<ul id="sortable" class="span3">
+				<li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Boondock Saints</li>
+				<li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Clash of the Titans</li>
+				<li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Matrix</li>
+				<li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>I am Legend</li>
+				<li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 5</li>
+				<li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 6</li>
+				<li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 7</li>
+            	<li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 7</li>
+            	<li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 7</li>
+            	<li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 7</li>
+			</ul>
+        </div>
+	</body>
+</html>
